@@ -1,0 +1,67 @@
+header
+    .navbar.navbar-default.navbar-fixed-top.opaque-navbar(role='navegacion')
+          .container
+            .navbar-header
+              button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+              a.navbar-brand(href='index.html') Default Welcome Msg!
+            .navbar-collapse.collapse
+              ul.nav.navbar-nav.navbar-right
+                li(id='menu1').dropdown
+                      a(data-toggle='dropdown', href='#menu1').dropdown-toogle Language
+                          img(src='Problema/assets/images/flag1.png')
+                          b.caret
+                      ul.dropdown-menu
+                          li
+                            a(href='#') Test
+                          li
+                            a(href='#') Test2
+                li(id='menu2').dropdown
+                      a(data-toggle='dropdown', href='#menu2').dropdown-toogle 
+                          i(class='fa fa-usd') Currency
+                          b.caret
+                      ul.dropdown-menu
+                          li
+                            a(href='#') Test
+                          li
+                            a(href='#') Test2
+                li(id='menu3').dropdown
+                    a(data-toggle='dropdown', href='#menu3').dropdown-toogle 
+                        i(class='fa fa-user') My Account
+                        b.caret
+                    ul.dropdown-menu
+                        li
+                          a(href='#') Test
+                        li
+                          a(href='#') Test2
+section(id='logo')
+    .container
+        +threecolumn('OPENING TIME' ,'9.00AM - 10.00PM', src='Problema/assets/images/logo.png',classe='fa fa-clock-o')
+
+.navbar.navbar-default.opaque-navbar(role='navegacion')
+              .container
+                .navbar-header
+                  button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                    span.sr-only Toggle navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                .navbar-collapse.collapse
+                  ul.nav.navbar-nav.navbar-left
+                    li
+                      a(href='index.html') HOME
+                    li
+                      a(href='contact.html') CONTACT
+                  ul.nav.navbar-nav.navbar-right  
+                    li(id='menu4').dropdown
+                          a(data-toggle='dropdown', href='#menu4').dropdown-toogle 
+                              i(class='fa fa-user') My Account
+                              b.caret
+                          ul.dropdown-menu
+                              li
+                                a(href='#') Test
+                              li
+                                a(href='#') Test2

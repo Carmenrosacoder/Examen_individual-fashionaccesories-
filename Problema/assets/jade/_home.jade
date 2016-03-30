@@ -1,0 +1,125 @@
+#myCarousel.carousel.slide(data-ride='carousel')
+                                              // Indicators
+                                              ol.carousel-indicators
+                                                li.active(data-target='#myCarousel', data-slide-to='0')
+                                                li(data-target='#myCarousel', data-slide-to='1')
+                                                li(data-target='#myCarousel', data-slide-to='2')
+                                              .carousel-inner
+                                                .item.active
+                                                  img(src='Problema/assets/images/slider1.jpg')
+                                                  .container
+                                                    .carousel-caption
+                                                      .descripcion
+                                                          h1 AUTUMN/WINTER LOOKBOOK.
+                                                      p
+                                                        |- 2016 COLLECTION -
+                                                .item
+                                                  img(src='Problema/assets/images/slider2.jpg', alt='Second slide')
+                                                  .container
+                                                    .carousel-caption
+                                                        .descripcion
+                                                            h1 AUTUMN/WINTER LOOKBOOK.
+                                                        p
+                                                          |- 2016 COLLECTION -
+                                        
+                                              a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+                                                span.glyphicon.glyphicon-chevron-left
+                                              a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+                                                span.glyphicon.glyphicon-chevron-right
+                                            // /.carousel  
+section(id='banner')
+ .container
+     .row
+         .col-lg-5
+             img(src='Problema/assets/images/banner1.jpg')
+         .col-lg-7
+             img(src='Problema/assets/images/banner2.jpg')
+ 
+ nav(id='pag')
+    ul.pagination.pagination-lg
+                             li.page-item
+                                 a.page-link(href='#', aria-label='Previous')
+                                     span(aria-hidden='true') <
+                                     span.sr-only Previous
+                             li.page-item
+                                 a.page-link(href='#' class='active') LATEST
+                             li.page-item
+                                  a.page-link(href='#') BESTSELLER
+                             li.page-item
+                                  a.page-link(href='#') SALE
+                             li.page-item
+                                  a.page-link(href='#', aria-label='Next')
+                                     span(aria-hidden='true') >
+                                     span.sr-only Next
+section(id='latest')
+    .container
+        .row
+            +accesorios('$218' , src='Problema/assets/images/a1.jpg')
+            +accesorios('$218' , src='Problema/assets/images/b1.jpg')
+            +accesorios('$218' , src='Problema/assets/images/c1.jpg')
+            +accesorios('$218' , src='Problema/assets/images/d1.jpg')
+section(id='publicidad')
+    .container
+        .row
+            .col-lg-2
+                img(src='Problema/assets/images/client1.jpg')
+            .col-lg-2
+                img(src='Problema/assets/images/client2.jpg')
+            .col-lg-2
+                img(src='Problema/assets/images/client3.jpg')
+            .col-lg-2
+                img(src='Problema/assets/images/client4.jpg')
+            .col-lg-2
+                img(src='Problema/assets/images/client5.jpg')
+            .col-lg-2
+                img(src='Problema/assets/images/client6.jpg')
+        
+nav(id='pag')
+     ul.pagination.pagination-lg
+                                            li.page-item
+                                                a.page-link(href='#', aria-label='Previous')
+                                                    span(aria-hidden='true') <
+                                                    span.sr-only Previous
+                                            li.page-item
+                                                a.page-link(href='#') CLOTHING
+                                            li.page-item
+                                                 a.page-link(href='#') EQUIPMENTS
+                                            li.page-item
+                                                 a.page-link(href='#') JEWELLERY
+                                            li.page-item
+                                                 a.page-link(href='#', aria-label='Next')
+                                                    span(aria-hidden='true') >
+                                                    span.sr-only Next
+section(id='clothing')
+ .container
+     .row
+         +clothing('$230' , src='Problema/assets/images/a2.jpg')
+         +clothing('$230' , src='Problema/assets/images/d2.jpg')
+         +clothing('$230' , src='Problema/assets/images/g2.jpg')
+     .row
+        +clothing('$230' , src='Problema/assets/images/a2.jpg')
+        +clothing('$230' , src='Problema/assets/images/d2.jpg')
+        +clothing('$230' , src='Problema/assets/images/g2.jpg')
+nav(id='pag')
+    ul.pagination.pagination-lg
+                                                    li.page-item
+                                                        a.page-link(href='#', aria-label='Previous')
+                                                            span(aria-hidden='true') «
+                                                            span.sr-only Previous
+                                                    li.page-item
+                                                         a.page-link(href='#') SALE
+                                                    li.page-item
+                                                         a.page-link(href='#', aria-label='Next')
+                                                            span(aria-hidden='true') »
+                                                            span.sr-only Next
+section(id='blog')
+    .container
+        .row
+            +blog(' ', src='Problema/assets/images/blog1.jpg')
+            +blog(' ', src='Problema/assets/images/blog2.jpg')
+            +blog(' ', src='Problema/assets/images/blog3.jpg')
+section
+.container
+    +threecolumn2('ORDER ONLINE NOW' ,'Call Us:(0123) 456 789', classe='fa fa-clock-o')
+    +threecolumn2('FREE WORLDWIDE SHIPPING' ,'On Order Over $100', classe='fa fa-clock-o')
+    +threecolumn2('30 DAYS MONEY BACK 100%' ,'Satisfaction Guaranntee', classe='fa fa-clock-o')

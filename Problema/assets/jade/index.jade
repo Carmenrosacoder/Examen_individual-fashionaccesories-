@@ -1,0 +1,85 @@
+doctype html
+html
+    head
+        tittle
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        link(href='Problema/assets/css/bootstrap.min.css', rel='stylesheet')
+        link(rel='stylesheet' href='js/bootstrap.min.js' media='screen' title='no title' charset='utf-8')
+        link(href='Problema/assets/css/main.css' , rel='stylesheet')
+        link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css')
+        -var texto = "Deliver Wide"
+        -var add= "SALE"
+        -var adds= "Add to Cart"
+        -var btnnew= "NEW"
+        -var title= "THE SAMPLE HEADING TITLE"
+        -var fecha= "27/11/2015"
+        -var contenido= "Lorem ipsum dolor sit amet,consectur adispic ing elit ,sed do..."
+        -var more="Read more..."
+        -var lorem= "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+        mixin threecolumn(tittle,fecha,src,classe)
+            .row
+                .col-lg-4
+                        i(class=classe id='reloj') 
+                        h3(class='gris')= tittle
+                        span= fecha
+                .col-lg-4
+                        img(src=src)
+                .col-lg-4
+                    .input-group
+                        input(type='text' class='form-control' placeholder='search')
+                        span.input-group-btn
+                            button.btn.btn-default Go
+        mixin threecolumn2(titulo,fono,classe)
+                .col-lg-4
+                    .restr
+                        i(class=classe id='reloj') 
+                        h4= titulo
+                        p= fono
+        mixin accesorios(monto , src)
+                .col-lg-3
+                    img(src=src)
+                    block buttn
+                        a(href='#' class='ad')= add
+                    a(href='#' class='new')= btnnew
+                    .info(class='text-center')
+                        p= texto
+                        i(class='fa fa-star')
+                        i(class='fa fa-star')
+                        i(class='fa fa-star')
+                        i(class='fa fa-star-o')
+                        i(class='fa fa-star-o')
+                        p(class='pink')= monto
+        mixin clothing(monto,src)
+                .col-lg-4
+                        img(src=src class='text-left')
+                        a(href='#' class='ad')= add
+                        a(href='#' class='new')= btnnew
+                        .infor
+                            p= texto
+                            p(class='pink')= monto
+                            i(class='fa fa-star')
+                            i(class='fa fa-star')
+                            i(class='fa fa-star')
+                            i(class='fa fa-star-o')
+                            i(class='fa fa-star-o')
+                            a(href='#' class='ad2')= adds
+        mixin blog(x , src )
+                .col-lg-4
+                    
+                    img(src=src)
+                    h3= title
+                    p= fecha
+                    br
+                    p= contenido
+                    a(href='#' class='pink')= more
+                    p= x
+                                
+    body
+        include _header.jade
+        include _home.jade
+        include _footer.jade
+        script(src='Problema/assets/js/jquery.js')
+        script(src='Problema/assets/js/bootstrap.min.js')
+        script(src='Problema/assets/js/fashion.js')

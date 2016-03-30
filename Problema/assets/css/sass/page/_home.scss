@@ -1,0 +1,74 @@
+#publicidad{
+    background-image: url(../images/client-bg.jpg);
+    background-size: cover;
+
+    height: 300px;
+}
+
+#pag{
+    text-align: center;
+}
+.pagination>li>a{
+    border:none;
+    color: black;
+    font-weight: bold;
+}
+#latest{
+    img{
+
+        background-color: white;
+        padding: 5px 5px 100px 5px;
+        border:1px solid #d6d6d6;
+        width: 100%;
+    }
+}
+.info{
+    font-weight: bold;
+    margin-top: -82px;
+
+}
+.new{
+    position: absolute;
+    left: 20px;
+    top: 45px;
+    color: white;
+    background-color:  #E48080;
+    padding: 5px 10px;
+}
+
+.ad{
+@extend .new;
+    left: 20px;
+    top: 10px;
+    background-color:  #444444;
+    padding: 5px 10px;
+}
+.ad2{
+    @extend .ad;
+    position: relative;
+    float: left;
+    margin-left: -19px;
+}
+#publicidad{
+    padding-top:110px;
+    img{
+        width: 100%;
+    }
+}
+#clothing{
+    img{
+        background-color: white;
+        padding: 5px;
+        border:1px solid #d6d6d6;
+        width: 50%;
+    }
+    .col-lg-4{
+        padding: 0px 20px 20px 20px;
+    }
+}
+.infor {
+    padding-left: 211px;}
+.restr{
+    border: 2px solid #F1F1F1;
+    padding: 5px 15px;
+}

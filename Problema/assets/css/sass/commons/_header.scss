@@ -1,0 +1,31 @@
+.navbar-default {
+    background-color: #eeeeee;
+    margin: 0px;
+}
+#logo{
+    margin-top: 100px;
+}
+#reloj{
+    color: #777777;
+    font-size: 53px;
+    float: left;
+    padding: 13px 5px 20px 0px;
+}
+.descripcion{
+border: 2px solid white;
+padding: 0px;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover{
+background-color: #E48080;
+}
+#modal{
+    border-top: 0px;
+}
+.input-group {
+    margin-top: 20px;
+    border-radius: 0px;
+}
+.nav>li>a:hover {
+    background-color: #E48080;
+}

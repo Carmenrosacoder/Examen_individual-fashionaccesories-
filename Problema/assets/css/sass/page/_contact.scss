@@ -1,0 +1,32 @@
+#bkg{
+    background-image: url(../images/contact_bg.jpg);
+    background-size: cover;
+    height: 350px;
+}
+.bkg_pink{
+    margin-top: 50px;
+    background-color: #E48080;
+    color: white;
+    font-size: 80px;
+    width: 50%;
+    font-weight: bold;
+    float: left;
+}
+.texto_bkg{
+
+    color: white;
+    font-weight: normal;
+margin-left: 650px;
+margin-top: 50px;
+}
+.complete , textarea{
+    background-color: #F2F2F2;
+    border: none;
+    width: 98%;
+}
+.envio{
+    background-color: #909295;
+    padding: 10px 20px;
+    color: white;
+    margin-left: 467px;
+}
